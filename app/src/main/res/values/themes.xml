@@ -1,0 +1,123 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Jobber" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Jobber" parent="Base.Theme.Jobber" />
+
+    <style name="CustomActiveButton">
+        <item name="backgroundTint">@color/teal</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CustomSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColorHint">@color/lite_gray</item>
+        <item name="closeIcon">@drawable/icon_close</item>
+        <item name="android:background">@drawable/style_search_view</item>
+        <item name="android:tint">@color/teal</item>
+    </style>
+
+    <style name="CustomFilterView" >
+        <item name="android:background">@drawable/style_search_view_filter</item>
+    </style>
+
+    <style name="CustomFilterText" >
+        <item name="android:textColor">@color/gray_blue</item>
+    </style>
+
+    <style name="CustomFilterLine" >
+        <item name="android:background">@color/lite_gray</item>
+    </style>
+
+    <style name="CustomCategories" >
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="CustomСurrentWork" >
+        <item name="android:background">@drawable/style_custom_current_work</item>
+    </style>
+
+    <style name="CustomСurrentStar" >
+        <item name="android:background">@drawable/style_custom_star</item>
+    </style>
+
+    <style name="CustomNoActiveButton">
+        <item name="backgroundTint">@color/gray</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CustomHeadingsText">
+        <item name="android:textColor">@color/arrow_back</item>
+    </style>
+
+    <style name="ProfileText">
+        <item name="android:textColor">@color/profile_text</item>
+    </style>
+
+    <style name="ProfileText2">
+        <item name="android:textColor">@color/profile_text2</item>
+    </style>
+
+    <style name="CustomHeadingsTextLight">
+        <item name="android:textColor">@color/gray_light</item>
+    </style>
+
+    <style name="CustomHeadingsTextPrice">
+        <item name="android:textColor">@color/teal</item>
+    </style>
+
+    <style name="CustomGoBackButton">
+        <item name="android:background">@drawable/icon_back</item>
+        <item name="backgroundTint">@color/arrow_back</item>
+    </style>
+
+    <style name="CustomMenu">
+        <item name="android:background">@drawable/nav_menu_background</item>
+        <item name="itemTextColor">@color/nav_item_color_state_text</item>
+    </style>
+
+    <style name="Screen">
+        <item name="android:background">@color/screen</item>
+    </style>
+
+    <style name="ScreenGray">
+        <item name="android:background">@color/screen_gray</item>
+    </style>
+
+    <style name="CustomBottomSheet">
+        <item name="android:background">@drawable/bottom_sheet_round_corners</item>
+    </style>
+
+    <style name="CustomBottomSheetWorkerText">
+        <item name="android:textColor">@color/gray_blue_text</item>
+    </style>
+
+    <style name="Theme.App.SplashTheme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimationDuration">200</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/icon_messages</item>
+        <item name="postSplashScreenTheme">@style/Theme.Jobber</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.SelectedCornerRadius" parent="">
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="PhotoCreate" parent="">
+        <item name="cornerSizeTopRight">10dp</item>
+        <item name="cornerSizeTopLeft">10dp</item>
+        <item name="cornerSizeBottomLeft">10dp</item>
+        <item name="cornerSizeBottomRight">10dp</item>
+    </style>
+
+    <style name="PhotoProfile" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

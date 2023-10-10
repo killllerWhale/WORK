@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/start_navigator"
+    app:startDestination="@id/startFragment">
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.realllapp.jobber.fragments.start.startFragment.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_genderFragment"
+            app:destination="@id/genderFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/genderFragment"
+        android:name="com.realllapp.jobber.fragments.start.genderFragment.GenderFragment"
+        android:label="fragment_gender"
+        tools:layout="@layout/fragment_gender" >
+        <action
+            android:id="@+id/action_genderFragment_to_birthdayFragment"
+            app:destination="@id/birthdayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/birthdayFragment"
+        android:name="com.realllapp.jobber.fragments.start.birthdayFragment.BirthdayFragment"
+        android:label="fragment_birthday"
+        tools:layout="@layout/fragment_birthday" >
+        <action
+            android:id="@+id/action_birthdayFragment_to_finishFragment"
+            app:destination="@id/finishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="com.realllapp.jobber.fragments.start.finishFragment.FinishFragment"
+        android:label="fragment_finish"
+        tools:layout="@layout/fragment_finish" >
+        <action
+            android:id="@+id/action_finishFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+
+    <include app:graph="@navigation/main_navigator" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.realllapp.jobber.activity.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>
